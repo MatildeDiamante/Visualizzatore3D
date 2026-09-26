@@ -12,7 +12,7 @@ export default function App() {
     <div className="app">
       <header className="app-header">
         <h1>
-          <span className="text-gradient">Udine</span> ancient wells
+          <span className="text-gradient">Udine</span> ancient wells:
         </h1>
         <h2>
           a comparison between <span className="text-gradient">COLMAP</span> and{" "}
@@ -34,7 +34,7 @@ export default function App() {
           onSelect={setActiveId}
         />
         <div className="credits">
-          Open-source code coded by{" "}
+          Open-source code created by{" "}
           <span className="text-gradient">Matilde Moretti</span> with React
         </div>
       </footer>
