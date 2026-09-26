@@ -6,17 +6,17 @@ import Model from "./Model";
 import Loader from "./Loader";
 
 interface SceneProps {
-  glbPath: string;
+  glbUrl: string;
 }
 
-export default function Scene({ glbPath }: SceneProps) {
+export default function Scene({ glbUrl }: SceneProps) {
   return (
     <div className="scene-container">
       <Suspense fallback={<Loader />}>
         <Canvas camera={{ position: [3, 2, 3], fov: 50 }}>
           <ambientLight intensity={0.6} />
           <directionalLight position={[5, 5, 5]} intensity={1} />
-          <Model key={glbPath} path={glbPath} />
+          <Model key={glbUrl} path={glbUrl} />
           <Environment preset="city" />
           <OrbitControls enableDamping />
         </Canvas>

@@ -15,7 +15,7 @@ export default function App() {
       </header>
 
       <main className="viewer-area">
-        <Scene glbPath={activeModel.glbPath} />
+        <Scene glbUrl={activeModel.glbUrl} />
       </main>
 
       <footer className="selector-area">

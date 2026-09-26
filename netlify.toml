@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  VITE_SUPABASE_STORAGE_URL = "https://ngmqwjnepbvcduazpbxn.supabase.co/storage/v1/object/public/3D%20models%20(TRELLIS%20and%20COLMAP)"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
