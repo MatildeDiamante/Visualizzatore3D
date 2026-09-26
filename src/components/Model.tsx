@@ -29,7 +29,7 @@ export default function Model({ path }: ModelProps) {
 
     // Scales the model in order to put in a cube of side ~2
     const maxDim = Math.max(size.x, size.y, size.z);
-    const scale = maxDim > 0 ? 2 / maxDim : 1;
+    const scale = maxDim > 0 ? 5 / maxDim : 1;
     groupRef.current.scale.setScalar(scale);
   }, [clonedScene]);
 

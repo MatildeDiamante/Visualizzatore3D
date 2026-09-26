@@ -11,11 +11,20 @@ export default function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>{activeModel.name}</h1>
+        <h1>
+          <span className="text-gradient">Udine</span> ancient wells
+        </h1>
+        <h2>
+          a comparison between <span className="text-gradient">COLMAP</span> and{" "}
+          <span className="text-gradient">TRELLIS</span>
+        </h2>
+        <h3>
+          <span className="text-gradient">{activeModel.name}</span>
+        </h3>
       </header>
 
       <main className="viewer-area">
-        <Scene glbUrl={activeModel.glbUrl} />
+        <Scene glbUrl={activeModel.glbUrl} />{" "}
       </main>
 
       <footer className="selector-area">
@@ -24,6 +33,10 @@ export default function App() {
           activeId={activeId}
           onSelect={setActiveId}
         />
+        <div className="credits">
+          Open-source code coded by{" "}
+          <span className="text-gradient">Matilde Moretti</span> with React
+        </div>
       </footer>
     </div>
   );

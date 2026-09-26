@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  overscroll-behavior-x: none;
+}
 
 html,
 body,
@@ -10,7 +13,7 @@ body,
 }
 
 body {
-  font-family: system-ui, sans-serif;
-  background: #111;
-  color: #eee;
+  font-family: poppins, monospace, sans-serif;
+  background: #0d162c;
+  color: white;
 }
