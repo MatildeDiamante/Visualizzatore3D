@@ -35,7 +35,7 @@ export default function App() {
         />
         <div className="credits">
           Open-source code created by{" "}
-          <span className="text-gradient">Matilde Moretti</span> with React
+          <span className="text-gradient">Matilde Moretti</span> with React and Three.js
         </div>
       </footer>
     </div>

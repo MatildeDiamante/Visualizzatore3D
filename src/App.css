@@ -1,5 +1,5 @@
 h1 {
-  font-size: 50px;
+  font-size: 55px;
 }
 
 .app {
@@ -138,4 +138,88 @@ h1 {
   font-size: 11px;
   margin-top: 20px;
   text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  .app-header h2 {
+    font-size: 22px;
+    margin-top: -20px;
+  }
+
+  .app-header h3 {
+    font-size: 18px;
+    margin-top: 24px;
+  }
+
+  .viewer-area {
+    height: 380px;
+    min-height: 320px;
+  }
+
+  .selector-area {
+    padding: 24px;
+  }
+
+  .model-selector {
+    gap: 12px;
+    padding: 16px 0;
+  }
+
+  .thumbnail-btn img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .thumbnail-btn span {
+    font-size: 12px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .app-header h2 {
+    font-size: 16px;
+    margin-top: -12px;
+  }
+
+  .app-header h3 {
+    font-size: 15px;
+    margin-top: 16px;
+  }
+
+  .viewer-area {
+    height: 280px;
+    min-height: 240px;
+  }
+
+  .selector-area {
+    padding: 16px;
+  }
+
+  .model-selector {
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  .thumbnail-btn img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .thumbnail-btn span {
+    font-size: 10px;
+  }
+
+  .credits {
+    font-size: 10px;
+  }
 }
